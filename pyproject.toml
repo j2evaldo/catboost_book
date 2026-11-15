@@ -1,0 +1,24 @@
+[project]
+name = "teste-catboost"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Evaldo", email = "evaldoazeredoc@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arfs>=3.0.0",
+    "catboost>=1.2.10",
+    "jupyter>=1.1.1",
+    "numpy>=2.5.4",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+teste-catboost = "teste_catboost:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
